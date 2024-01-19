@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Nunito+Sans:opsz,wght@6..12,700&family=Nunito:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: Moret;
+  src: url(./font/Moret-Regular.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Roboto', sans-serif; */
+
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body {
+  overflow-y: visible;
+  position: relative;
+  height: unset;
+  background: #000000;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+
+
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  background-color: #0B0500;
+  z-index: 9999;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  font-size: 2vw;
+  transition: all linear .3s;
+}
+
+#loader h1 {
+  position: absolute;
+  background: linear-gradient(to right, orange, orangered);
+  color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+  animation-name: load;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+}
+
+#loader h1:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+#loader h1:nth-child(3) {
+  animation-delay: 2.5s;
+}
+
+#loader h1:nth-child(4) {
+  animation-delay: 3.5s;
+}
+
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+.cursor {
+  position: fixed;
+  height: 20px;
+  top: 0;
+  left: 0;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #dadada;
+  z-index: 10;
+}
+
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/noise.gif") 0 0;
+  /* Replace with the URL of your noise texture image */
+  pointer-events: none;
+
+  opacity: 0.2;
+  /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  background: #0000009a;
+
+}
+
+
+.container {
+  width: 400%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: yellow;
+}
+
+.lastContainer {
+  display: flex;
+  height: 100vh;
+  background: yellow;
+}
+
+section {
+  width: 100%;
+
+}
+
+
+
+.container nav {
+  height: 100vh;
+  width: 5vw;
+  position: absolute;
+  left: 0;
+  background-color: #000000;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+nav i {
+  height: 30px;
+  color: #fff;
+  padding: 20px 20px;
+  font-size: 1.6vw;
+
+}
+
+nav .circle {
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url("./images/mypic.jpg");
+  background-size: cover;
+}
+
+nav i:hover {
+
+  scale: 1.2;
+
+}
+
+.home {
+  position: relative;
+  background-color: #2a2e318a;
+  color: #dadada;
+  margin-left: 5vw;
+  width: 95%;
+
+}
+
+.main-home {
+
+  padding: 20px 20px;
+
+}
+
+.main-home .top {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.main-home .top .top-left {
+  font-size: 1.3vw;
+
+}
+
+.top-left h1 {
+  font-family: 'Allison', cursive;
+  font-size: 3vw;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+
+.moving-text {
+  max-width: 25%;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.top .moving-text h2 {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 300;
+  font-size: 1.3vw;
+
+
+}
+
+.moving-text .mt {
+  animation: moveLeft 10s infinite linear;
+}
+
+*::selection {
+  background-color: #F4AABD;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+
+.main-home .center {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Moret', serif;
+  border: 2px solid green;
+
+}
+
+.main-home .center hr {
+  width: 40vw;
+}
+
+.main-home .center .center-text {
+  font-size: 5vw;
+
+}
+
+
+
+.about {
+  background-color: purple;
+}
+
+.contact {
+  background-color: darkcyan;
+}
