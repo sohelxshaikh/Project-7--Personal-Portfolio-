@@ -372,6 +372,26 @@ a {
   opacity: 0.6;
 }
 
+#scroll {
+  position: relative;
+
+  /* Set the height of your element */
+
+  /* Set the background color of your element */
+  animation: moveLeftRight 2s ease infinite;
+}
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    left: 0;
+  }
+
+  50% {
+    left: -3%;
+  }
+}
+
+
 
 .about {
   position: relative;
