@@ -6,6 +6,11 @@
   src: url(./font/Moret-Regular.ttf);
 }
 
+@font-face {
+  font-family: Moret-book;
+  src: url(./font/Moret-Book.ttf);
+}
+
 
 * {
   margin: 0;
@@ -48,7 +53,7 @@ body {
 #loader {
   height: 100%;
   width: 100%;
-  background-color: #0B0500;
+  background-color: #000000;
   z-index: 9999;
   color: gray;
   display: flex;
@@ -140,7 +145,7 @@ body {
 
 
 .container {
-  width: 400%;
+  width: 500%;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
@@ -179,16 +184,17 @@ section {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 nav i {
   height: 30px;
   color: #fff;
-  padding: 20px 20px;
-  font-size: 1.6vw;
+  padding: 20px 40px;
+  font-size: 1.3vw;
 
 }
+
 
 nav .circle {
   height: 50px;
@@ -200,23 +206,24 @@ nav .circle {
 }
 
 nav i:hover {
-
-  scale: 1.2;
+  cursor: pointer;
+  opacity: .6;
 
 }
 
 .home {
   position: relative;
-  background-color: #2a2e318a;
+  background-color: #2d313487;
   color: #dadada;
   margin-left: 5vw;
-  width: 95%;
+  width: 100%;
 
 }
 
 .main-home {
 
   padding: 20px 20px;
+  margin-right: 40px;
 
 }
 
@@ -288,24 +295,87 @@ nav i:hover {
   height: 80vh;
   align-items: center;
   justify-content: center;
-  font-family: 'Moret', serif;
-  border: 2px solid green;
+  font-family: 'Moret-book', serif;
+
 
 }
 
 .main-home .center hr {
   width: 40vw;
+  position: relative;
+  height: 2px;
+  /* Set the height of your horizontal line */
+  width: 50%;
+  animation: expandWidth 4s ease-in-out 2;
+
 }
 
-.main-home .center .center-text {
-  font-size: 5vw;
+
+@keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 70%;
+  }
+
+  /* 100% {
+    width: 0;
+  } */
+}
+
+.main-home .center .center-text h1 {
+  font-size: 8vw;
+  font-weight: 300;
+
+
 
 }
 
+.main-home .center h3 {
+  font-size: 2vw;
+  margin-top: 20px;
+  letter-spacing: 0.5vw;
+
+}
+
+
+
+a {
+  color: #fff;
+
+}
+
+.main-home .home-footer {
+
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2vw;
+  margin-top: 1vw;
+}
+
+.main-home .home-footer h3 {
+  font-weight: 100;
+  transition: all ease 0.3s;
+  color: #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-home .home-footer h3:hover {
+
+  opacity: 0.6;
+}
 
 
 .about {
-  background-color: purple;
+  position: relative;
+  background-color: palegreen;
 }
 
 .contact {
