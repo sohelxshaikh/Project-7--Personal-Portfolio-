@@ -503,6 +503,9 @@ a {
   padding: 20px 0;
 }
 
+.project-container a {
+  color: #000000;
+}
 
 .project-container .project-item .project-data h1 {
   font-family: moret, serif;
