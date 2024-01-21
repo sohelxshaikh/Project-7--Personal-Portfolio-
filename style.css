@@ -408,8 +408,6 @@ a {
 .project-container {
 
   position: relative;
-
-
   height: 100%;
 }
 
@@ -518,6 +516,103 @@ a {
   cursor: pointer;
 
 }
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-left: 100px;
+
+
+}
+
+.see-more-wrapper {
+  text-align: center;
+}
+
+.see-more-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f88ba8;
+  /* Change the background color as desired */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out .7s;
+}
+
+.see-more-circle:hover {
+
+  scale: 0.7;
+}
+
+.see-more-i {
+  font-size: 2em;
+  color: #fff;
+  /* Change the color as desired */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.see-more h2 {
+  position: absolute;
+  font-size: 19px;
+  top: 0;
+  font-family: Moret;
+  color: #000;
+  transform-origin: center center;
+  stroke-opacity: 0.5;
+
+}
+
+.see-more h2:nth-child(2) {
+  transform: rotate(45deg) translate(95px) rotate(-45deg);
+
+}
+
+.see-more h2:nth-child(3) {
+  transform: rotate(90deg) translate(140px) rotate(-90deg);
+
+}
+
+.see-more h2:nth-child(4) {
+  transform: rotate(135deg) translate(95px) rotate(-135deg);
+
+}
+
+
+
+.see-more h2 {
+  position: absolute;
+  font-size: 19px;
+  top: 0;
+  font-family: Moret;
+  color: #000;
+
+}
+
+.see-more h2:nth-child(2) {
+  transform: rotate(45deg) translate(95px) rotate(-45deg);
+
+}
+
+.see-more h2:nth-child(3) {
+  transform: rotate(90deg) translate(140px) rotate(-90deg);
+
+}
+
+.see-more h2:nth-child(4) {
+  transform: rotate(135deg) translate(95px) rotate(-135deg);
+
+}
+
+
 
 .contact {
   position: relative;
