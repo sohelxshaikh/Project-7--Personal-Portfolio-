@@ -153,24 +153,11 @@ body {
   flex-wrap: nowrap;
 }
 
-.firstContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: yellow;
-}
 
-.lastContainer {
-  display: flex;
-  height: 100vh;
-  background: yellow;
-}
 
 section {
   width: 100%;
-  position: relative;
+
 
 }
 
@@ -219,7 +206,7 @@ nav i:hover {
   background-color: #2d313487;
   color: #dadada;
   margin-left: 5vw;
-  max-width: 100%;
+  width: 100vw;
 
 }
 
@@ -398,16 +385,21 @@ a {
 
 
 .project {
-  width: 200%;
+  width: 100%;
+  overflow-y: hidden;
   background-color: #ffffff;
   color: #000000;
 
 
+
+
+
 }
+
+
 
 .project-container {
 
-  position: relative;
   height: 100%;
 }
 
@@ -449,8 +441,9 @@ a {
 
 .project-content {
   height: 100%;
-  width: 100%;
+
   display: flex;
+
   gap: 10vw;
   top: 0;
   position: absolute;
@@ -522,7 +515,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  margin-left: 100px;
+
 
 
 }
@@ -617,4 +610,14 @@ a {
 .contact {
   position: relative;
   background-color: darkcyan;
+}
+
+.about {
+
+  background-color: palevioletred;
+}
+
+.last {
+  position: relative;
+  background-color: gray;
 }
