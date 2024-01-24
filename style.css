@@ -690,16 +690,56 @@ a {
   background-color: red;
 
 }
+.work-div-container {
+  overflow: hidden;
+  height: 67%;
+  position: relative;
+  overflow-y: auto;
+}
+.work-div-container::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+.work-div-container::-webkit-scrollbar-thumb {
+  background: #f88ba8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Track */
+.work-div-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .work-wrapper .elem{
+  position: relative;
   height: 100px;
   border-bottom: 1px solid silver;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .work-wrapper .elem .elem-left{
   padding: 10px 70px;
   line-height: 25px;
+}
+.work-wrapper .elem img{
+  height: 70px;
+    width: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+    /* transform: translate(-50%,-50%); */
+    transition: all linear .2s;
+    
+    opacity: 0;
+  
 }
 .work-wrapper .elem .elem-left h4{
   color: #f88ba8;
@@ -751,6 +791,8 @@ a {
   animation: expAnime 5s linear infinite;
   letter-spacing: -4px;
 }
+
+
 @keyframes expAnime {
   0%{
     transform: translateX(0);

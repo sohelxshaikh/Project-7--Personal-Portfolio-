@@ -64,3 +64,20 @@ function pageTl() {
   timeline.from(".home-footer", { y: 100, duration: 0.5 });
 }
 pageTl();
+
+
+function workPage(){
+  var work = document.querySelector('.work')
+  work.addEventListener("mouseenter",() => {
+    gsap.to(".cursor",{
+      backgroundColor:"#000"
+    })
+  })
+  work.addEventListener("mouseleave",() => {
+    gsap.to(".cursor",{
+      backgroundColor:"#fff"
+    })
+  })
+
+}
+workPage();
