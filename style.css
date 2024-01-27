@@ -762,10 +762,10 @@ a {
 
 }
 .work-wrapper .elem .elem-right h2{
-  color: gray;
-  margin-right: 30px;
+  color: rgba(128, 128, 128, 0.863);
+  margin-right: 70px;
   font-family: Moret;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
 
 }
@@ -777,7 +777,7 @@ a {
   gap: 20px;
   bottom: 0;
   font-size: 40px;
-  
+  width: 50%;
   padding: 30px 0;
   border: 1px solid rgba(128, 128, 128, 0.705);
   font-family: 'Geist', sans-serif;
@@ -795,17 +795,210 @@ a {
 
 @keyframes expAnime {
   0%{
-    transform: translateX(0);
+    transform: translateX();
   }
   100%{
-    transform: translateX(-100%);
+    transform: translateX(-150%);
   }
   
 }
 .about {
-
-  background-color: palevioletred;
+  background-color: #212529d8;
+  height: 100%;
+  /* background-color: palevioletred; */
 }
+.about .about-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-wrapper .education{
+  height: 100%;
+  width: 50%;
+  background-color:  #212529d8;
+}
+.about .about-wrapper .education .edu-wrapper{
+  height: 50%;
+  width:100%;
+  background-color: #f6a8bdd7;
+}
+
+
+.about .about-wrapper .education>h2{
+  font-family: 'Geist', sans-serif;
+  font-size: 20px;
+  color: #ffffffd8;
+  text-transform: uppercase;
+  padding: 20px;
+
+}
+.about .about-wrapper .education .study{
+  background-color: #fffffff8;
+  height: 40%;
+  width: 100%;
+  overflow-y: scroll;
+}
+.about .about-wrapper .education .edu-moving-text{
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 40px;
+  overflow: hidden;
+  color: #ffffffe0;
+  font-family: 'Geist', sans-serif;
+  width: 100%;
+
+}
+.about .about-wrapper .education .edu-moving-text h1{
+  font-weight: 900;
+  letter-spacing: -2px;
+  
+  animation: expAnime 6s linear infinite ;
+
+}
+.about .about-wrapper .education .edu-moving-text:nth-child(2) h1{
+  font-weight: 900;
+  letter-spacing: -2px;
+  
+  animation: expAnime 6s linear infinite reverse;
+
+}
+
+
+@keyframes expAnimeRev {
+  0%{
+    transform: translateX(-100%);
+  
+  }
+  100%{
+    transform: translateX(100%);
+  }
+  
+}
+
+.about .about-wrapper .education .edu-moving-text span{
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+
+.study .elem{
+  position: relative;
+  height: 100px;
+  border-bottom: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.study .elem .elem-left{
+  padding: 10px 70px;
+  line-height: 25px;
+}
+
+.study .elem .elem-left h4{
+  color: #f88ba8;
+  font-family: 'Roboto';
+  font-size: 14px;
+
+}
+.study .elem .elem-left h5{
+  color: gray;
+  font-family: 'Roboto';
+  font-size: 13px;
+
+}
+.study .elem .elem-left h1{
+  color: #000;
+  
+  font-family: Moret;
+  font-size: 24px;
+  font-weight: 100;
+
+}
+.study .elem .elem-right h2{
+  color: gray;
+  margin-right: 30px;
+  font-family: Moret;
+  font-size: 24px;
+  font-weight: 100;
+
+} 
+.study .elem .elem-left h4{
+  color: #f88ba8;
+  font-family: 'Roboto';
+  font-size: 14px;
+
+}
+.study .elem .elem-left h5{
+  color: gray;
+  font-family: 'Roboto';
+  font-size: 13px;
+
+}
+.study .elem .elem-left h1{
+  color: #000;
+  
+  font-family: Moret;
+  font-size: 24px;
+  font-weight: 100;
+
+}
+.study .elem .elem-right h2{
+  color: rgba(128, 128, 128, 0.822);
+  margin-right: 60px;
+  font-family: Moret;
+  font-size: 18px;
+  font-weight: 100;
+
+}
+.study::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+.study::-webkit-scrollbar-thumb {
+  background: #f88ba8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.study::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Track */
+.study::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about .about-wrapper .tools{
+  /* background-color: #212529d8; */
+  position: relative;
+  width: 50%;
+  justify-content: center;
+  height: 100%;
+  
+   
+}
+.tools .tools-top{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools .tools-top h1{
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-family: 'Geist', sans-serif;
+}
+
+
+
 
 .last {
   position: relative;

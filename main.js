@@ -81,3 +81,24 @@ function workPage(){
 
 }
 workPage();
+
+function eduCation(){
+  var study = document.querySelector(".study");
+  study.addEventListener("mouseenter",() => {
+    gsap.to('.cursor',{
+      backgroundColor:"#000"
+    })
+  })
+  study.addEventListener("mouseleave",() => {
+    gsap.to('.cursor',{
+      backgroundColor:"#fff"
+    })
+  })
+
+}
+eduCation();
+
+
+// '''''''''''''''''''''''''''''''''''Canvas Animation''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
