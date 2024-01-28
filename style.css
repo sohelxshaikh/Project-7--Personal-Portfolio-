@@ -19,7 +19,7 @@
 
   box-sizing: border-box;
   text-decoration: none;
-  cursor: none;
+  
 }
 
 html {
@@ -139,7 +139,7 @@ body {
 
 
 .container {
-  width: 800%;
+  width: 900%;
   height: 100vh;
   display: flex;
 
@@ -981,23 +981,46 @@ a {
   width: 50%;
   justify-content: center;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
   
    
 }
 .tools .tools-top{
   padding-top: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
 }
 .tools .tools-top h1{
-  font-size: 50px;
-  color: transparent;
-  -webkit-text-stroke: 2px white;
+  font-size: 100px;
+  
+  color: rgba(255, 255, 255, 0.788);
+  
+  
   font-family: 'Geist', sans-serif;
+  text-align: center;
 }
 
+.tools .tools-icon{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  /* background-color: red; */
+  flex-direction: column;
+  z-index: 10;
+  
+}
 
+/* .tools .tools-icon svg{
+  position: absolute;
+} */
 
 
 .last {
@@ -1007,5 +1030,5 @@ a {
 
 .edu {
   position: relative;
-  background-color: red;
+  background-color: pink;
 }

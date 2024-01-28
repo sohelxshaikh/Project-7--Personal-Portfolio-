@@ -101,4 +101,42 @@ eduCation();
 
 // '''''''''''''''''''''''''''''''''''Canvas Animation''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+gsap.registerPlugin(Draggable, InertiaPlugin);
+
+gsap.to(".tools .tools-icon svg", {
+  y: 20, // Adjust the vertical distance of the floating effect
+  duration: 1, // Duration of the animation
+  ease: "power1.inOut", // Easing function for a smooth effect
+  yoyo: true, // Allows the animation to reverse, creating a floating effect
+  repeat: -1, // Repeat indefinitely
+});
+
+Draggable.create(".tools .tools-icon svg", {
+  bounds: ".tools",
+  inertia: true,
+  
+  
+  
+  
+  cursor: "grab",
+  onDragEnd: function () {
+    gsap.to(".tools .tools-icon svg", {
+     
+      duration: 1,
+      ease: "power1.inOut",
+    });
+  },
+  onRelease: function () {
+    // Animate the element back to its original position
+    gsap.to(".tools .tools-icon svg", {
+      x: 0, // Change this to the original x-coordinate
+      y: 0, // Change this to the original y-coordinate
+      duration: 2, // Adjust the duration as needed
+      ease: "power2.inOut", // Easing function for a smooth effect
+    });
+  },
+  
+  
+});
+
 
