@@ -112,6 +112,7 @@ body {
   border-radius: 50%;
   background-color: #dadada;
   z-index: 10;
+  display: none;
 }
 
 
@@ -196,7 +197,7 @@ nav .circle:hover {
 
 nav i:hover {
   cursor: pointer;
-  opacity: .6;
+  
 
 }
 
@@ -358,10 +359,7 @@ a {
   gap: 20px;
 }
 
-.main-home .home-footer h3:hover {
 
-  opacity: 0.6;
-}
 
 #scroll {
   position: relative;
@@ -1011,7 +1009,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  
   /* background-color: red; */
   flex-direction: column;
   z-index: 10;
@@ -1031,4 +1029,15 @@ a {
 .edu {
   position: relative;
   background-color: pink;
+}
+
+.menu-container{
+  height: 100%;
+  width: 100vw;
+  background:black;
+  border-left: 9px solid white;
+  z-index: 9;
+  top: -100%;
+  left: 0.5%;
+  position: absolute;
 }

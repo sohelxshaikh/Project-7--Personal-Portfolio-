@@ -1,15 +1,18 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function mouse() {
-  let cursor = document.querySelector(".cursor");
-  let body = document.querySelector("body");
-  body.addEventListener("mousemove", (e) => {
-    gsap.to(cursor, {
-      x: e.x + "px",
-      y: e.y + "px",
-    });
-  });
+  // let cursor = document.querySelector(".cursor");
+  // let body = document.querySelector("body");
+  // body.addEventListener("mousemove", (e) => {
+  //   gsap.to(cursor, {
+  //     x: e.x + "px",
+  //     y: e.y + "px",
+  //   });
+  // });
+  Shery.mouseFollower();
+
 }
+Shery.makeMagnet(".magnet");
 
 mouse();
 
@@ -99,7 +102,6 @@ function eduCation(){
 eduCation();
 
 
-// '''''''''''''''''''''''''''''''''''Canvas Animation''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
@@ -139,4 +141,34 @@ Draggable.create(".tools .tools-icon svg", {
   
 });
 
+function hamBurger(){
+  var menu = document.querySelector(".menu-container")
+  var btn = document.getElementById("btn")
+  var flag = 1;
+  btn.addEventListener('click',function(){
+    if(flag){
+      gsap.to(menu,{
+        y:"100%",
+        duration:1,
+      }),
+      flag=0
+    }else{
+      gsap.to(menu,{
+        y:"-100%",
+        duration:1,
+      }),
+      flag=1
+    }
+    
+ 
+});
+}
 
+hamBurger();
+
+
+function sheryShreylady(){
+ 
+
+}
+sheryShreylady();
