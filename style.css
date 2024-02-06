@@ -1034,12 +1034,117 @@ a {
 .last {
   position: relative;
   background-color: gray;
+
+  
 }
 
 .edu {
   position: relative;
-  background-color: pink;
+ background-color: #fffffff3;
+
+
 }
+.edu .certificate-container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+.certificate-container .certificate-heading-wrapper {
+  height: 100%;
+  border-right: 1px solid rgba(128, 128, 128, 0.567);
+  width: 150px;
+  color: #f6a8bd;
+  font-size: 3vw;
+  font-family: 'Geist', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  line-height:45vw;
+ 
+  text-transform: uppercase;
+
+
+
+}
+
+.certificate-container .certificate-heading-wrapper h1 {
+
+
+  animation: moveDown 17s infinite linear;
+  transform: rotate(-90deg);
+  font-weight: 900;
+
+  
+}
+.edu .certificate-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  
+  gap: 5vw;
+  top: 0;
+  position: absolute;
+  left: 12%
+}
+
+.certificate-content .certificate-item {
+  width: 25%;
+  height: 100%;
+  /* background-color: #ddd; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+
+}
+
+.certificate-content .certificate-item img{
+  
+  object-fit: contain;
+  height:300px;
+  width: 100%;
+  
+  background-position: center;
+  background-size: cover;
+  
+
+}
+
+
+.certificate-content .certificate-item h2{
+  font-family: 'Roboto';
+  color: #f88ba8;
+  font-size: 1vw;
+  padding: 20px 0;
+}
+
+.certificate-content .certificate-item a {
+  color: #000000;
+}
+
+.certificate-content .certificate-item h1 {
+  font-family: moret, serif;
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
+
 
 .menu-container{
   height: 100%;
