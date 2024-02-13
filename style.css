@@ -1258,3 +1258,37 @@ background: #202428ad;
   color: rgba(128, 128, 128, 0.836);
 }
 
+
+.overlay{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  section{
+    display: none;
+
+  }
+  .container{
+    display: none;
+  }
+  .overlay{
+    display: block;
+    color: #fff;
+    font-family: Moret;
+   
+    height: 100vh;
+    width: 100vw;
+
+  }
+
+  
+  .bg{
+    display: none;
+  }
+ 
+  .noise{
+    display: none;
+  }
+  
+}
