@@ -1031,12 +1031,6 @@ a {
 } */
 
 
-.last {
-  position: relative;
-  background-color: gray;
-
-  
-}
 
 .edu {
   position: relative;
@@ -1182,3 +1176,85 @@ a {
   font-size: 55px;
   letter-spacing: 2px;
 }
+
+
+
+.last {
+  position: relative;
+  background: #0000008a;
+  display: flex;
+  overflow: hidden;
+}
+.last-one{
+  overflow: hidden;
+
+  width: 50%;
+  height: 100%;
+}
+
+.last-head{
+  font-family: Moret;
+
+  color: white;
+  padding: 10px 20px;
+}
+.last-head h1{
+  font-size: 5vw;
+  text-align: center;
+}
+.last-images{
+  height: 400px;
+  width: 100%;
+  margin-top: 100px;
+  
+  z-index: -1;
+  display: flex;
+  flex-wrap: nowrap;
+  rotate: 15deg; 
+  animation: expAnime2 20s linear infinite  ;
+}
+
+@keyframes expAnime2 {
+  0%{
+    transform: translateX(0);
+  
+  }
+  100%{
+    transform: translateX(-400%);
+  }
+  
+}
+
+.last-images img{
+  height: 100%;
+  margin-left: 20px;
+
+}
+
+
+
+
+.last-two{
+background: #202428ad;
+ width: 50%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+.last-two h1{
+  font-family: Moret;
+  font-size: 100px;
+  color: #dadadadc;
+}
+
+.last-two p{
+  position: absolute;
+  bottom: 5%;
+  left: 70%;
+  font-family: 'Roboto',sans-serif;
+  color: rgba(128, 128, 128, 0.836);
+}
+
